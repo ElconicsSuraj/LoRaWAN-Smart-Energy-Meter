@@ -1,0 +1,6 @@
+private
+Debug/
+.settings
+STM32WL-standalone*Debug.launch
+.vscode/
+.claude/

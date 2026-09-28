@@ -1,0 +1,298 @@
+15:12:34 **** Build of configuration Debug for project STM32WL-standalone ****
+make -j all 
+arm-none-eabi-gcc "../Middlewares/SubGHz_Phy/radio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DCORE_CM4 -DSTM32WL55xx -DUSE_HAL_DRIVER -DDEBUG -c -I../Drivers/CMSIS/Include -I../Drivers/BSP/STM32WLxx_Nucleo -I../LoRaWAN/Target -I../Middlewares/LoRaWAN/Packages -I../Middlewares/LoRaWAN -I../Middlewares/SubGHz_Phy -I../Drivers/CMSIS/ST/STM32WLxx/Include -I../LoRaWAN/App -I../Middlewares/LoRaWAN/Utilities -I../Middlewares/LoRaWAN/Region -I../Drivers/STM32WLxx_HAL_Driver/Inc -I../Drivers/Inc -I../Drivers/Utilities -I../Drivers/Sensors -O3 -ffunction-sections -fdata-sections -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/SubGHz_Phy/radio.d" -MT"Middlewares/SubGHz_Phy/radio.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/SubGHz_Phy/radio.o"
+arm-none-eabi-gcc "../Middlewares/SubGHz_Phy/radio_driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DCORE_CM4 -DSTM32WL55xx -DUSE_HAL_DRIVER -DDEBUG -c -I../Drivers/CMSIS/Include -I../Drivers/BSP/STM32WLxx_Nucleo -I../LoRaWAN/Target -I../Middlewares/LoRaWAN/Packages -I../Middlewares/LoRaWAN -I../Middlewares/SubGHz_Phy -I../Drivers/CMSIS/ST/STM32WLxx/Include -I../LoRaWAN/App -I../Middlewares/LoRaWAN/Utilities -I../Middlewares/LoRaWAN/Region -I../Drivers/STM32WLxx_HAL_Driver/Inc -I../Drivers/Inc -I../Drivers/Utilities -I../Drivers/Sensors -O3 -ffunction-sections -fdata-sections -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/SubGHz_Phy/radio_driver.d" -MT"Middlewares/SubGHz_Phy/radio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/SubGHz_Phy/radio_driver.o"
+arm-none-eabi-gcc "../Middlewares/SubGHz_Phy/radio_fw.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DCORE_CM4 -DSTM32WL55xx -DUSE_HAL_DRIVER -DDEBUG -c -I../Drivers/CMSIS/Include -I../Drivers/BSP/STM32WLxx_Nucleo -I../LoRaWAN/Target -I../Middlewares/LoRaWAN/Packages -I../Middlewares/LoRaWAN -I../Middlewares/SubGHz_Phy -I../Drivers/CMSIS/ST/STM32WLxx/Include -I../LoRaWAN/App -I../Middlewares/LoRaWAN/Utilities -I../Middlewares/LoRaWAN/Region -I../Drivers/STM32WLxx_HAL_Driver/Inc -I../Drivers/Inc -I../Drivers/Utilities -I../Drivers/Sensors -O3 -ffunction-sections -fdata-sections -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/SubGHz_Phy/radio_fw.d" -MT"Middlewares/SubGHz_Phy/radio_fw.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/SubGHz_Phy/radio_fw.o"
+arm-none-eabi-gcc "../Middlewares/LoRaWAN/Region/Region.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DCORE_CM4 -DSTM32WL55xx -DUSE_HAL_DRIVER -DDEBUG -c -I../Drivers/CMSIS/Include -I../Drivers/BSP/STM32WLxx_Nucleo -I../LoRaWAN/Target -I../Middlewares/LoRaWAN/Packages -I../Middlewares/LoRaWAN -I../Middlewares/SubGHz_Phy -I../Drivers/CMSIS/ST/STM32WLxx/Include -I../LoRaWAN/App -I../Middlewares/LoRaWAN/Utilities -I../Middlewares/LoRaWAN/Region -I../Drivers/STM32WLxx_HAL_Driver/Inc -I../Drivers/Inc -I../Drivers/Utilities -I../Drivers/Sensors -O3 -ffunction-sections -fdata-sections -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/LoRaWAN/Region/Region.d" -MT"Middlewares/LoRaWAN/Region/Region.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/LoRaWAN/Region/Region.o"
+arm-none-eabi-gcc "../Middlewares/LoRaWAN/Region/RegionAS923.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DCORE_CM4 -DSTM32WL55xx -DUSE_HAL_DRIVER -DDEBUG -c -I../Drivers/CMSIS/Include -I../Drivers/BSP/STM32WLxx_Nucleo -I../LoRaWAN/Target -I../Middlewares/LoRaWAN/Packages -I../Middlewares/LoRaWAN -I../Middlewares/SubGHz_Phy -I../Drivers/CMSIS/ST/STM32WLxx/Include -I../LoRaWAN/App -I../Middlewares/LoRaWAN/Utilities -I../Middlewares/LoRaWAN/Region -I../Drivers/STM32WLxx_HAL_Driver/Inc -I../Drivers/Inc -I../Drivers/Utilities -I../Drivers/Sensors -O3 -ffunction-sections -fdata-sections -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/LoRaWAN/Region/RegionAS923.d" -MT"Middlewares/LoRaWAN/Region/RegionAS923.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/LoRaWAN/Region/RegionAS923.o"
+arm-none-eabi-gcc "../Middlewares/LoRaWAN/Region/RegionAU915.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DCORE_CM4 -DSTM32WL55xx -DUSE_HAL_DRIVER -DDEBUG -c -I../Drivers/CMSIS/Include -I../Drivers/BSP/STM32WLxx_Nucleo -I../LoRaWAN/Target -I../Middlewares/LoRaWAN/Packages -I../Middlewares/LoRaWAN -I../Middlewares/SubGHz_Phy -I../Drivers/CMSIS/ST/STM32WLxx/Include -I../LoRaWAN/App -I../Middlewares/LoRaWAN/Utilities -I../Middlewares/LoRaWAN/Region -I../Drivers/STM32WLxx_HAL_Driver/Inc -I../Drivers/Inc -I../Drivers/Utilities -I../Drivers/Sensors -O3 -ffunction-sections -fdata-sections -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/LoRaWAN/Region/RegionAU915.d" -MT"Middlewares/LoRaWAN/Region/RegionAU915.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/LoRaWAN/Region/RegionAU915.o"
+arm-none-eabi-gcc "../Middlewares/LoRaWAN/Region/RegionBaseUS.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DCORE_CM4 -DSTM32WL55xx -DUSE_HAL_DRIVER -DDEBUG -c -I../Drivers/CMSIS/Include -I../Drivers/BSP/STM32WLxx_Nucleo -I../LoRaWAN/Target -I../Middlewares/LoRaWAN/Packages -I../Middlewares/LoRaWAN -I../Middlewares/SubGHz_Phy -I../Drivers/CMSIS/ST/STM32WLxx/Include -I../LoRaWAN/App -I../Middlewares/LoRaWAN/Utilities -I../Middlewares/LoRaWAN/Region -I../Drivers/STM32WLxx_HAL_Driver/Inc -I../Drivers/Inc -I../Drivers/Utilities -I../Drivers/Sensors -O3 -ffunction-sections -fdata-sections -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/LoRaWAN/Region/RegionBaseUS.d" -MT"Middlewares/LoRaWAN/Region/RegionBaseUS.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/LoRaWAN/Region/RegionBaseUS.o"
+arm-none-eabi-gcc "../Middlewares/LoRaWAN/Region/RegionCN470.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DCORE_CM4 -DSTM32WL55xx -DUSE_HAL_DRIVER -DDEBUG -c -I../Drivers/CMSIS/Include -I../Drivers/BSP/STM32WLxx_Nucleo -I../LoRaWAN/Target -I../Middlewares/LoRaWAN/Packages -I../Middlewares/LoRaWAN -I../Middlewares/SubGHz_Phy -I../Drivers/CMSIS/ST/STM32WLxx/Include -I../LoRaWAN/App -I../Middlewares/LoRaWAN/Utilities -I../Middlewares/LoRaWAN/Region -I../Drivers/STM32WLxx_HAL_Driver/Inc -I../Drivers/Inc -I../Drivers/Utilities -I../Drivers/Sensors -O3 -ffunction-sections -fdata-sections -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/LoRaWAN/Region/RegionCN470.d" -MT"Middlewares/LoRaWAN/Region/RegionCN470.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/LoRaWAN/Region/RegionCN470.o"
+arm-none-eabi-gcc "../Middlewares/LoRaWAN/Region/RegionCN779.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DCORE_CM4 -DSTM32WL55xx -DUSE_HAL_DRIVER -DDEBUG -c -I../Drivers/CMSIS/Include -I../Drivers/BSP/STM32WLxx_Nucleo -I../LoRaWAN/Target -I../Middlewares/LoRaWAN/Packages -I../Middlewares/LoRaWAN -I../Middlewares/SubGHz_Phy -I../Drivers/CMSIS/ST/STM32WLxx/Include -I../LoRaWAN/App -I../Middlewares/LoRaWAN/Utilities -I../Middlewares/LoRaWAN/Region -I../Drivers/STM32WLxx_HAL_Driver/Inc -I../Drivers/Inc -I../Drivers/Utilities -I../Drivers/Sensors -O3 -ffunction-sections -fdata-sections -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/LoRaWAN/Region/RegionCN779.d" -MT"Middlewares/LoRaWAN/Region/RegionCN779.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/LoRaWAN/Region/RegionCN779.o"
+arm-none-eabi-gcc "../Middlewares/LoRaWAN/Region/RegionCommon.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DCORE_CM4 -DSTM32WL55xx -DUSE_HAL_DRIVER -DDEBUG -c -I../Drivers/CMSIS/Include -I../Drivers/BSP/STM32WLxx_Nucleo -I../LoRaWAN/Target -I../Middlewares/LoRaWAN/Packages -I../Middlewares/LoRaWAN -I../Middlewares/SubGHz_Phy -I../Drivers/CMSIS/ST/STM32WLxx/Include -I../LoRaWAN/App -I../Middlewares/LoRaWAN/Utilities -I../Middlewares/LoRaWAN/Region -I../Drivers/STM32WLxx_HAL_Driver/Inc -I../Drivers/Inc -I../Drivers/Utilities -I../Drivers/Sensors -O3 -ffunction-sections -fdata-sections -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/LoRaWAN/Region/RegionCommon.d" -MT"Middlewares/LoRaWAN/Region/RegionCommon.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/LoRaWAN/Region/RegionCommon.o"
+arm-none-eabi-gcc "../Middlewares/LoRaWAN/Region/RegionEU433.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DCORE_CM4 -DSTM32WL55xx -DUSE_HAL_DRIVER -DDEBUG -c -I../Drivers/CMSIS/Include -I../Drivers/BSP/STM32WLxx_Nucleo -I../LoRaWAN/Target -I../Middlewares/LoRaWAN/Packages -I../Middlewares/LoRaWAN -I../Middlewares/SubGHz_Phy -I../Drivers/CMSIS/ST/STM32WLxx/Include -I../LoRaWAN/App -I../Middlewares/LoRaWAN/Utilities -I../Middlewares/LoRaWAN/Region -I../Drivers/STM32WLxx_HAL_Driver/Inc -I../Drivers/Inc -I../Drivers/Utilities -I../Drivers/Sensors -O3 -ffunction-sections -fdata-sections -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/LoRaWAN/Region/RegionEU433.d" -MT"Middlewares/LoRaWAN/Region/RegionEU433.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/LoRaWAN/Region/RegionEU433.o"
+arm-none-eabi-gcc "../Middlewares/LoRaWAN/Region/RegionEU868.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DCORE_CM4 -DSTM32WL55xx -DUSE_HAL_DRIVER -DDEBUG -c -I../Drivers/CMSIS/Include -I../Drivers/BSP/STM32WLxx_Nucleo -I../LoRaWAN/Target -I../Middlewares/LoRaWAN/Packages -I../Middlewares/LoRaWAN -I../Middlewares/SubGHz_Phy -I../Drivers/CMSIS/ST/STM32WLxx/Include -I../LoRaWAN/App -I../Middlewares/LoRaWAN/Utilities -I../Middlewares/LoRaWAN/Region -I../Drivers/STM32WLxx_HAL_Driver/Inc -I../Drivers/Inc -I../Drivers/Utilities -I../Drivers/Sensors -O3 -ffunction-sections -fdata-sections -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/LoRaWAN/Region/RegionEU868.d" -MT"Middlewares/LoRaWAN/Region/RegionEU868.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/LoRaWAN/Region/RegionEU868.o"
+arm-none-eabi-gcc "../Middlewares/LoRaWAN/Region/RegionIN865.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DCORE_CM4 -DSTM32WL55xx -DUSE_HAL_DRIVER -DDEBUG -c -I../Drivers/CMSIS/Include -I../Drivers/BSP/STM32WLxx_Nucleo -I../LoRaWAN/Target -I../Middlewares/LoRaWAN/Packages -I../Middlewares/LoRaWAN -I../Middlewares/SubGHz_Phy -I../Drivers/CMSIS/ST/STM32WLxx/Include -I../LoRaWAN/App -I../Middlewares/LoRaWAN/Utilities -I../Middlewares/LoRaWAN/Region -I../Drivers/STM32WLxx_HAL_Driver/Inc -I../Drivers/Inc -I../Drivers/Utilities -I../Drivers/Sensors -O3 -ffunction-sections -fdata-sections -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/LoRaWAN/Region/RegionIN865.d" -MT"Middlewares/LoRaWAN/Region/RegionIN865.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/LoRaWAN/Region/RegionIN865.o"
+arm-none-eabi-gcc "../Middlewares/LoRaWAN/Region/RegionKR920.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DCORE_CM4 -DSTM32WL55xx -DUSE_HAL_DRIVER -DDEBUG -c -I../Drivers/CMSIS/Include -I../Drivers/BSP/STM32WLxx_Nucleo -I../LoRaWAN/Target -I../Middlewares/LoRaWAN/Packages -I../Middlewares/LoRaWAN -I../Middlewares/SubGHz_Phy -I../Drivers/CMSIS/ST/STM32WLxx/Include -I../LoRaWAN/App -I../Middlewares/LoRaWAN/Utilities -I../Middlewares/LoRaWAN/Region -I../Drivers/STM32WLxx_HAL_Driver/Inc -I../Drivers/Inc -I../Drivers/Utilities -I../Drivers/Sensors -O3 -ffunction-sections -fdata-sections -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/LoRaWAN/Region/RegionKR920.d" -MT"Middlewares/LoRaWAN/Region/RegionKR920.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/LoRaWAN/Region/RegionKR920.o"
+arm-none-eabi-gcc "../Middlewares/LoRaWAN/Region/RegionRU864.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DCORE_CM4 -DSTM32WL55xx -DUSE_HAL_DRIVER -DDEBUG -c -I../Drivers/CMSIS/Include -I../Drivers/BSP/STM32WLxx_Nucleo -I../LoRaWAN/Target -I../Middlewares/LoRaWAN/Packages -I../Middlewares/LoRaWAN -I../Middlewares/SubGHz_Phy -I../Drivers/CMSIS/ST/STM32WLxx/Include -I../LoRaWAN/App -I../Middlewares/LoRaWAN/Utilities -I../Middlewares/LoRaWAN/Region -I../Drivers/STM32WLxx_HAL_Driver/Inc -I../Drivers/Inc -I../Drivers/Utilities -I../Drivers/Sensors -O3 -ffunction-sections -fdata-sections -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/LoRaWAN/Region/RegionRU864.d" -MT"Middlewares/LoRaWAN/Region/RegionRU864.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/LoRaWAN/Region/RegionRU864.o"
+arm-none-eabi-gcc "../Middlewares/LoRaWAN/Region/RegionUS915.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DCORE_CM4 -DSTM32WL55xx -DUSE_HAL_DRIVER -DDEBUG -c -I../Drivers/CMSIS/Include -I../Drivers/BSP/STM32WLxx_Nucleo -I../LoRaWAN/Target -I../Middlewares/LoRaWAN/Packages -I../Middlewares/LoRaWAN -I../Middlewares/SubGHz_Phy -I../Drivers/CMSIS/ST/STM32WLxx/Include -I../LoRaWAN/App -I../Middlewares/LoRaWAN/Utilities -I../Middlewares/LoRaWAN/Region -I../Drivers/STM32WLxx_HAL_Driver/Inc -I../Drivers/Inc -I../Drivers/Utilities -I../Drivers/Sensors -O3 -ffunction-sections -fdata-sections -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/LoRaWAN/Region/RegionUS915.d" -MT"Middlewares/LoRaWAN/Region/RegionUS915.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/LoRaWAN/Region/RegionUS915.o"
+arm-none-eabi-gcc "../Middlewares/LoRaWAN/Packages/LmhpClockSync.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DCORE_CM4 -DSTM32WL55xx -DUSE_HAL_DRIVER -DDEBUG -c -I../Drivers/CMSIS/Include -I../Drivers/BSP/STM32WLxx_Nucleo -I../LoRaWAN/Target -I../Middlewares/LoRaWAN/Packages -I../Middlewares/LoRaWAN -I../Middlewares/SubGHz_Phy -I../Drivers/CMSIS/ST/STM32WLxx/Include -I../LoRaWAN/App -I../Middlewares/LoRaWAN/Utilities -I../Middlewares/LoRaWAN/Region -I../Drivers/STM32WLxx_HAL_Driver/Inc -I../Drivers/Inc -I../Drivers/Utilities -I../Drivers/Sensors -O3 -ffunction-sections -fdata-sections -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/LoRaWAN/Packages/LmhpClockSync.d" -MT"Middlewares/LoRaWAN/Packages/LmhpClockSync.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/LoRaWAN/Packages/LmhpClockSync.o"
+arm-none-eabi-gcc "../Middlewares/LoRaWAN/Packages/LmhpCompliance.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DCORE_CM4 -DSTM32WL55xx -DUSE_HAL_DRIVER -DDEBUG -c -I../Drivers/CMSIS/Include -I../Drivers/BSP/STM32WLxx_Nucleo -I../LoRaWAN/Target -I../Middlewares/LoRaWAN/Packages -I../Middlewares/LoRaWAN -I../Middlewares/SubGHz_Phy -I../Drivers/CMSIS/ST/STM32WLxx/Include -I../LoRaWAN/App -I../Middlewares/LoRaWAN/Utilities -I../Middlewares/LoRaWAN/Region -I../Drivers/STM32WLxx_HAL_Driver/Inc -I../Drivers/Inc -I../Drivers/Utilities -I../Drivers/Sensors -O3 -ffunction-sections -fdata-sections -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/LoRaWAN/Packages/LmhpCompliance.d" -MT"Middlewares/LoRaWAN/Packages/LmhpCompliance.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/LoRaWAN/Packages/LmhpCompliance.o"
+arm-none-eabi-gcc "../Middlewares/LoRaWAN/Packages/LmhpFirmwareManagement.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DCORE_CM4 -DSTM32WL55xx -DUSE_HAL_DRIVER -DDEBUG -c -I../Drivers/CMSIS/Include -I../Drivers/BSP/STM32WLxx_Nucleo -I../LoRaWAN/Target -I../Middlewares/LoRaWAN/Packages -I../Middlewares/LoRaWAN -I../Middlewares/SubGHz_Phy -I../Drivers/CMSIS/ST/STM32WLxx/Include -I../LoRaWAN/App -I../Middlewares/LoRaWAN/Utilities -I../Middlewares/LoRaWAN/Region -I../Drivers/STM32WLxx_HAL_Driver/Inc -I../Drivers/Inc -I../Drivers/Utilities -I../Drivers/Sensors -O3 -ffunction-sections -fdata-sections -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/LoRaWAN/Packages/LmhpFirmwareManagement.d" -MT"Middlewares/LoRaWAN/Packages/LmhpFirmwareManagement.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/LoRaWAN/Packages/LmhpFirmwareManagement.o"
+arm-none-eabi-gcc "../Middlewares/LoRaWAN/Packages/LmhpPackagesRegistration.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DCORE_CM4 -DSTM32WL55xx -DUSE_HAL_DRIVER -DDEBUG -c -I../Drivers/CMSIS/Include -I../Drivers/BSP/STM32WLxx_Nucleo -I../LoRaWAN/Target -I../Middlewares/LoRaWAN/Packages -I../Middlewares/LoRaWAN -I../Middlewares/SubGHz_Phy -I../Drivers/CMSIS/ST/STM32WLxx/Include -I../LoRaWAN/App -I../Middlewares/LoRaWAN/Utilities -I../Middlewares/LoRaWAN/Region -I../Drivers/STM32WLxx_HAL_Driver/Inc -I../Drivers/Inc -I../Drivers/Utilities -I../Drivers/Sensors -O3 -ffunction-sections -fdata-sections -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/LoRaWAN/Packages/LmhpPackagesRegistration.d" -MT"Middlewares/LoRaWAN/Packages/LmhpPackagesRegistration.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/LoRaWAN/Packages/LmhpPackagesRegistration.o"
+arm-none-eabi-gcc "../Middlewares/LoRaWAN/Packages/LmhpRemoteMcastSetup.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DCORE_CM4 -DSTM32WL55xx -DUSE_HAL_DRIVER -DDEBUG -c -I../Drivers/CMSIS/Include -I../Drivers/BSP/STM32WLxx_Nucleo -I../LoRaWAN/Target -I../Middlewares/LoRaWAN/Packages -I../Middlewares/LoRaWAN -I../Middlewares/SubGHz_Phy -I../Drivers/CMSIS/ST/STM32WLxx/Include -I../LoRaWAN/App -I../Middlewares/LoRaWAN/Utilities -I../Middlewares/LoRaWAN/Region -I../Drivers/STM32WLxx_HAL_Driver/Inc -I../Drivers/Inc -I../Drivers/Utilities -I../Drivers/Sensors -O3 -ffunction-sections -fdata-sections -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/LoRaWAN/Packages/LmhpRemoteMcastSetup.d" -MT"Middlewares/LoRaWAN/Packages/LmhpRemoteMcastSetup.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/LoRaWAN/Packages/LmhpRemoteMcastSetup.o"
+arm-none-eabi-gcc "../Middlewares/LoRaWAN/LmHandler.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DCORE_CM4 -DSTM32WL55xx -DUSE_HAL_DRIVER -DDEBUG -c -I../Drivers/CMSIS/Include -I../Drivers/BSP/STM32WLxx_Nucleo -I../LoRaWAN/Target -I../Middlewares/LoRaWAN/Packages -I../Middlewares/LoRaWAN -I../Middlewares/SubGHz_Phy -I../Drivers/CMSIS/ST/STM32WLxx/Include -I../LoRaWAN/App -I../Middlewares/LoRaWAN/Utilities -I../Middlewares/LoRaWAN/Region -I../Drivers/STM32WLxx_HAL_Driver/Inc -I../Drivers/Inc -I../Drivers/Utilities -I../Drivers/Sensors -O3 -ffunction-sections -fdata-sections -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/LoRaWAN/LmHandler.d" -MT"Middlewares/LoRaWAN/LmHandler.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/LoRaWAN/LmHandler.o"
+arm-none-eabi-gcc "../Middlewares/LoRaWAN/LoRaMac.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DCORE_CM4 -DSTM32WL55xx -DUSE_HAL_DRIVER -DDEBUG -c -I../Drivers/CMSIS/Include -I../Drivers/BSP/STM32WLxx_Nucleo -I../LoRaWAN/Target -I../Middlewares/LoRaWAN/Packages -I../Middlewares/LoRaWAN -I../Middlewares/SubGHz_Phy -I../Drivers/CMSIS/ST/STM32WLxx/Include -I../LoRaWAN/App -I../Middlewares/LoRaWAN/Utilities -I../Middlewares/LoRaWAN/Region -I../Drivers/STM32WLxx_HAL_Driver/Inc -I../Drivers/Inc -I../Drivers/Utilities -I../Drivers/Sensors -O3 -ffunction-sections -fdata-sections -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/LoRaWAN/LoRaMac.d" -MT"Middlewares/LoRaWAN/LoRaMac.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/LoRaWAN/LoRaMac.o"
+arm-none-eabi-gcc "../Middlewares/LoRaWAN/LoRaMacAdr.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DCORE_CM4 -DSTM32WL55xx -DUSE_HAL_DRIVER -DDEBUG -c -I../Drivers/CMSIS/Include -I../Drivers/BSP/STM32WLxx_Nucleo -I../LoRaWAN/Target -I../Middlewares/LoRaWAN/Packages -I../Middlewares/LoRaWAN -I../Middlewares/SubGHz_Phy -I../Drivers/CMSIS/ST/STM32WLxx/Include -I../LoRaWAN/App -I../Middlewares/LoRaWAN/Utilities -I../Middlewares/LoRaWAN/Region -I../Drivers/STM32WLxx_HAL_Driver/Inc -I../Drivers/Inc -I../Drivers/Utilities -I../Drivers/Sensors -O3 -ffunction-sections -fdata-sections -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/LoRaWAN/LoRaMacAdr.d" -MT"Middlewares/LoRaWAN/LoRaMacAdr.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/LoRaWAN/LoRaMacAdr.o"
+arm-none-eabi-gcc "../Middlewares/LoRaWAN/LoRaMacClassB.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DCORE_CM4 -DSTM32WL55xx -DUSE_HAL_DRIVER -DDEBUG -c -I../Drivers/CMSIS/Include -I../Drivers/BSP/STM32WLxx_Nucleo -I../LoRaWAN/Target -I../Middlewares/LoRaWAN/Packages -I../Middlewares/LoRaWAN -I../Middlewares/SubGHz_Phy -I../Drivers/CMSIS/ST/STM32WLxx/Include -I../LoRaWAN/App -I../Middlewares/LoRaWAN/Utilities -I../Middlewares/LoRaWAN/Region -I../Drivers/STM32WLxx_HAL_Driver/Inc -I../Drivers/Inc -I../Drivers/Utilities -I../Drivers/Sensors -O3 -ffunction-sections -fdata-sections -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/LoRaWAN/LoRaMacClassB.d" -MT"Middlewares/LoRaWAN/LoRaMacClassB.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/LoRaWAN/LoRaMacClassB.o"
+arm-none-eabi-gcc "../Middlewares/LoRaWAN/LoRaMacCommands.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DCORE_CM4 -DSTM32WL55xx -DUSE_HAL_DRIVER -DDEBUG -c -I../Drivers/CMSIS/Include -I../Drivers/BSP/STM32WLxx_Nucleo -I../LoRaWAN/Target -I../Middlewares/LoRaWAN/Packages -I../Middlewares/LoRaWAN -I../Middlewares/SubGHz_Phy -I../Drivers/CMSIS/ST/STM32WLxx/Include -I../LoRaWAN/App -I../Middlewares/LoRaWAN/Utilities -I../Middlewares/LoRaWAN/Region -I../Drivers/STM32WLxx_HAL_Driver/Inc -I../Drivers/Inc -I../Drivers/Utilities -I../Drivers/Sensors -O3 -ffunction-sections -fdata-sections -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/LoRaWAN/LoRaMacCommands.d" -MT"Middlewares/LoRaWAN/LoRaMacCommands.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/LoRaWAN/LoRaMacCommands.o"
+arm-none-eabi-gcc "../Middlewares/LoRaWAN/LoRaMacConfirmQueue.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DCORE_CM4 -DSTM32WL55xx -DUSE_HAL_DRIVER -DDEBUG -c -I../Drivers/CMSIS/Include -I../Drivers/BSP/STM32WLxx_Nucleo -I../LoRaWAN/Target -I../Middlewares/LoRaWAN/Packages -I../Middlewares/LoRaWAN -I../Middlewares/SubGHz_Phy -I../Drivers/CMSIS/ST/STM32WLxx/Include -I../LoRaWAN/App -I../Middlewares/LoRaWAN/Utilities -I../Middlewares/LoRaWAN/Region -I../Drivers/STM32WLxx_HAL_Driver/Inc -I../Drivers/Inc -I../Drivers/Utilities -I../Drivers/Sensors -O3 -ffunction-sections -fdata-sections -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/LoRaWAN/LoRaMacConfirmQueue.d" -MT"Middlewares/LoRaWAN/LoRaMacConfirmQueue.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/LoRaWAN/LoRaMacConfirmQueue.o"
+arm-none-eabi-gcc "../Middlewares/LoRaWAN/LoRaMacCrypto.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DCORE_CM4 -DSTM32WL55xx -DUSE_HAL_DRIVER -DDEBUG -c -I../Drivers/CMSIS/Include -I../Drivers/BSP/STM32WLxx_Nucleo -I../LoRaWAN/Target -I../Middlewares/LoRaWAN/Packages -I../Middlewares/LoRaWAN -I../Middlewares/SubGHz_Phy -I../Drivers/CMSIS/ST/STM32WLxx/Include -I../LoRaWAN/App -I../Middlewares/LoRaWAN/Utilities -I../Middlewares/LoRaWAN/Region -I../Drivers/STM32WLxx_HAL_Driver/Inc -I../Drivers/Inc -I../Drivers/Utilities -I../Drivers/Sensors -O3 -ffunction-sections -fdata-sections -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/LoRaWAN/LoRaMacCrypto.d" -MT"Middlewares/LoRaWAN/LoRaMacCrypto.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/LoRaWAN/LoRaMacCrypto.o"
+arm-none-eabi-gcc "../Middlewares/LoRaWAN/NvmDataMgmt.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DCORE_CM4 -DSTM32WL55xx -DUSE_HAL_DRIVER -DDEBUG -c -I../Drivers/CMSIS/Include -I../Drivers/BSP/STM32WLxx_Nucleo -I../LoRaWAN/Target -I../Middlewares/LoRaWAN/Packages -I../Middlewares/LoRaWAN -I../Middlewares/SubGHz_Phy -I../Drivers/CMSIS/ST/STM32WLxx/Include -I../LoRaWAN/App -I../Middlewares/LoRaWAN/Utilities -I../Middlewares/LoRaWAN/Region -I../Drivers/STM32WLxx_HAL_Driver/Inc -I../Drivers/Inc -I../Drivers/Utilities -I../Drivers/Sensors -O3 -ffunction-sections -fdata-sections -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/LoRaWAN/NvmDataMgmt.d" -MT"Middlewares/LoRaWAN/NvmDataMgmt.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/LoRaWAN/NvmDataMgmt.o"
+arm-none-eabi-gcc "../Middlewares/LoRaWAN/soft-se.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DCORE_CM4 -DSTM32WL55xx -DUSE_HAL_DRIVER -DDEBUG -c -I../Drivers/CMSIS/Include -I../Drivers/BSP/STM32WLxx_Nucleo -I../LoRaWAN/Target -I../Middlewares/LoRaWAN/Packages -I../Middlewares/LoRaWAN -I../Middlewares/SubGHz_Phy -I../Drivers/CMSIS/ST/STM32WLxx/Include -I../LoRaWAN/App -I../Middlewares/LoRaWAN/Utilities -I../Middlewares/LoRaWAN/Region -I../Drivers/STM32WLxx_HAL_Driver/Inc -I../Drivers/Inc -I../Drivers/Utilities -I../Drivers/Sensors -O3 -ffunction-sections -fdata-sections -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/LoRaWAN/soft-se.d" -MT"Middlewares/LoRaWAN/soft-se.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/LoRaWAN/soft-se.o"
+arm-none-eabi-gcc "../LoRaWAN/App/app_lorawan.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DCORE_CM4 -DSTM32WL55xx -DUSE_HAL_DRIVER -DDEBUG -c -I../Drivers/CMSIS/Include -I../Drivers/BSP/STM32WLxx_Nucleo -I../LoRaWAN/Target -I../Middlewares/LoRaWAN/Packages -I../Middlewares/LoRaWAN -I../Middlewares/SubGHz_Phy -I../Drivers/CMSIS/ST/STM32WLxx/Include -I../LoRaWAN/App -I../Middlewares/LoRaWAN/Utilities -I../Middlewares/LoRaWAN/Region -I../Drivers/STM32WLxx_HAL_Driver/Inc -I../Drivers/Inc -I../Drivers/Utilities -I../Drivers/Sensors -O3 -ffunction-sections -fdata-sections -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"LoRaWAN/App/app_lorawan.d" -MT"LoRaWAN/App/app_lorawan.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "LoRaWAN/App/app_lorawan.o"
+arm-none-eabi-gcc "../LoRaWAN/App/lora_app.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DCORE_CM4 -DSTM32WL55xx -DUSE_HAL_DRIVER -DDEBUG -c -I../Drivers/CMSIS/Include -I../Drivers/BSP/STM32WLxx_Nucleo -I../LoRaWAN/Target -I../Middlewares/LoRaWAN/Packages -I../Middlewares/LoRaWAN -I../Middlewares/SubGHz_Phy -I../Drivers/CMSIS/ST/STM32WLxx/Include -I../LoRaWAN/App -I../Middlewares/LoRaWAN/Utilities -I../Middlewares/LoRaWAN/Region -I../Drivers/STM32WLxx_HAL_Driver/Inc -I../Drivers/Inc -I../Drivers/Utilities -I../Drivers/Sensors -O3 -ffunction-sections -fdata-sections -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"LoRaWAN/App/lora_app.d" -MT"LoRaWAN/App/lora_app.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "LoRaWAN/App/lora_app.o"
+arm-none-eabi-gcc "../LoRaWAN/App/lora_info.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DCORE_CM4 -DSTM32WL55xx -DUSE_HAL_DRIVER -DDEBUG -c -I../Drivers/CMSIS/Include -I../Drivers/BSP/STM32WLxx_Nucleo -I../LoRaWAN/Target -I../Middlewares/LoRaWAN/Packages -I../Middlewares/LoRaWAN -I../Middlewares/SubGHz_Phy -I../Drivers/CMSIS/ST/STM32WLxx/Include -I../LoRaWAN/App -I../Middlewares/LoRaWAN/Utilities -I../Middlewares/LoRaWAN/Region -I../Drivers/STM32WLxx_HAL_Driver/Inc -I../Drivers/Inc -I../Drivers/Utilities -I../Drivers/Sensors -O3 -ffunction-sections -fdata-sections -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"LoRaWAN/App/lora_info.d" -MT"LoRaWAN/App/lora_info.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "LoRaWAN/App/lora_info.o"
+arm-none-eabi-gcc "../LoRaWAN/App/send_raw_lora.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DCORE_CM4 -DSTM32WL55xx -DUSE_HAL_DRIVER -DDEBUG -c -I../Drivers/CMSIS/Include -I../Drivers/BSP/STM32WLxx_Nucleo -I../LoRaWAN/Target -I../Middlewares/LoRaWAN/Packages -I../Middlewares/LoRaWAN -I../Middlewares/SubGHz_Phy -I../Drivers/CMSIS/ST/STM32WLxx/Include -I../LoRaWAN/App -I../Middlewares/LoRaWAN/Utilities -I../Middlewares/LoRaWAN/Region -I../Drivers/STM32WLxx_HAL_Driver/Inc -I../Drivers/Inc -I../Drivers/Utilities -I../Drivers/Sensors -O3 -ffunction-sections -fdata-sections -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"LoRaWAN/App/send_raw_lora.d" -MT"LoRaWAN/App/send_raw_lora.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "LoRaWAN/App/send_raw_lora.o"
+arm-none-eabi-gcc "../Core/adc_if.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DCORE_CM4 -DSTM32WL55xx -DUSE_HAL_DRIVER -DDEBUG -c -I../Drivers/CMSIS/Include -I../Drivers/BSP/STM32WLxx_Nucleo -I../LoRaWAN/Target -I../Middlewares/LoRaWAN/Packages -I../Middlewares/LoRaWAN -I../Middlewares/SubGHz_Phy -I../Drivers/CMSIS/ST/STM32WLxx/Include -I../LoRaWAN/App -I../Middlewares/LoRaWAN/Utilities -I../Middlewares/LoRaWAN/Region -I../Drivers/STM32WLxx_HAL_Driver/Inc -I../Drivers/Inc -I../Drivers/Utilities -I../Drivers/Sensors -O3 -ffunction-sections -fdata-sections -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/adc_if.d" -MT"Core/adc_if.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/adc_if.o"
+arm-none-eabi-gcc "../Core/application_logic.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DCORE_CM4 -DSTM32WL55xx -DUSE_HAL_DRIVER -DDEBUG -c -I../Drivers/CMSIS/Include -I../Drivers/BSP/STM32WLxx_Nucleo -I../LoRaWAN/Target -I../Middlewares/LoRaWAN/Packages -I../Middlewares/LoRaWAN -I../Middlewares/SubGHz_Phy -I../Drivers/CMSIS/ST/STM32WLxx/Include -I../LoRaWAN/App -I../Middlewares/LoRaWAN/Utilities -I../Middlewares/LoRaWAN/Region -I../Drivers/STM32WLxx_HAL_Driver/Inc -I../Drivers/Inc -I../Drivers/Utilities -I../Drivers/Sensors -O3 -ffunction-sections -fdata-sections -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/application_logic.d" -MT"Core/application_logic.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/application_logic.o"
+arm-none-eabi-gcc "../Core/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DCORE_CM4 -DSTM32WL55xx -DUSE_HAL_DRIVER -DDEBUG -c -I../Drivers/CMSIS/Include -I../Drivers/BSP/STM32WLxx_Nucleo -I../LoRaWAN/Target -I../Middlewares/LoRaWAN/Packages -I../Middlewares/LoRaWAN -I../Middlewares/SubGHz_Phy -I../Drivers/CMSIS/ST/STM32WLxx/Include -I../LoRaWAN/App -I../Middlewares/LoRaWAN/Utilities -I../Middlewares/LoRaWAN/Region -I../Drivers/STM32WLxx_HAL_Driver/Inc -I../Drivers/Inc -I../Drivers/Utilities -I../Drivers/Sensors -O3 -ffunction-sections -fdata-sections -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/main.d" -MT"Core/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/main.o"
+arm-none-eabi-gcc "../Core/protocol.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DCORE_CM4 -DSTM32WL55xx -DUSE_HAL_DRIVER -DDEBUG -c -I../Drivers/CMSIS/Include -I../Drivers/BSP/STM32WLxx_Nucleo -I../LoRaWAN/Target -I../Middlewares/LoRaWAN/Packages -I../Middlewares/LoRaWAN -I../Middlewares/SubGHz_Phy -I../Drivers/CMSIS/ST/STM32WLxx/Include -I../LoRaWAN/App -I../Middlewares/LoRaWAN/Utilities -I../Middlewares/LoRaWAN/Region -I../Drivers/STM32WLxx_HAL_Driver/Inc -I../Drivers/Inc -I../Drivers/Utilities -I../Drivers/Sensors -O3 -ffunction-sections -fdata-sections -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/protocol.d" -MT"Core/protocol.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/protocol.o"
+arm-none-eabi-gcc "../Core/stm32wlxx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DCORE_CM4 -DSTM32WL55xx -DUSE_HAL_DRIVER -DDEBUG -c -I../Drivers/CMSIS/Include -I../Drivers/BSP/STM32WLxx_Nucleo -I../LoRaWAN/Target -I../Middlewares/LoRaWAN/Packages -I../Middlewares/LoRaWAN -I../Middlewares/SubGHz_Phy -I../Drivers/CMSIS/ST/STM32WLxx/Include -I../LoRaWAN/App -I../Middlewares/LoRaWAN/Utilities -I../Middlewares/LoRaWAN/Region -I../Drivers/STM32WLxx_HAL_Driver/Inc -I../Drivers/Inc -I../Drivers/Utilities -I../Drivers/Sensors -O3 -ffunction-sections -fdata-sections -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/stm32wlxx_it.d" -MT"Core/stm32wlxx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/stm32wlxx_it.o"
+arm-none-eabi-gcc "../Core/sys_app.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DCORE_CM4 -DSTM32WL55xx -DUSE_HAL_DRIVER -DDEBUG -c -I../Drivers/CMSIS/Include -I../Drivers/BSP/STM32WLxx_Nucleo -I../LoRaWAN/Target -I../Middlewares/LoRaWAN/Packages -I../Middlewares/LoRaWAN -I../Middlewares/SubGHz_Phy -I../Drivers/CMSIS/ST/STM32WLxx/Include -I../LoRaWAN/App -I../Middlewares/LoRaWAN/Utilities -I../Middlewares/LoRaWAN/Region -I../Drivers/STM32WLxx_HAL_Driver/Inc -I../Drivers/Inc -I../Drivers/Utilities -I../Drivers/Sensors -O3 -ffunction-sections -fdata-sections -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/sys_app.d" -MT"Core/sys_app.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/sys_app.o"
+arm-none-eabi-gcc "../Core/sys_debug.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DCORE_CM4 -DSTM32WL55xx -DUSE_HAL_DRIVER -DDEBUG -c -I../Drivers/CMSIS/Include -I../Drivers/BSP/STM32WLxx_Nucleo -I../LoRaWAN/Target -I../Middlewares/LoRaWAN/Packages -I../Middlewares/LoRaWAN -I../Middlewares/SubGHz_Phy -I../Drivers/CMSIS/ST/STM32WLxx/Include -I../LoRaWAN/App -I../Middlewares/LoRaWAN/Utilities -I../Middlewares/LoRaWAN/Region -I../Drivers/STM32WLxx_HAL_Driver/Inc -I../Drivers/Inc -I../Drivers/Utilities -I../Drivers/Sensors -O3 -ffunction-sections -fdata-sections -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/sys_debug.d" -MT"Core/sys_debug.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/sys_debug.o"
+../LoRaWAN/App/send_raw_lora.c: In function 'SendLoRaFrame':
+../LoRaWAN/App/send_raw_lora.c:111:33: warning: assignment to 'void (*)(uint8_t *, uint16_t,  int16_t,  int8_t)' {aka 'void (*)(unsigned char *, short unsigned int,  short int,  signed char)'} from incompatible pointer type 'void (*)(void)' [-Wincompatible-pointer-types]
+  111 |         LoRa_RadioEvents.RxDone = LoRa_OnRxDone;
+      |                                 ^
+../Core/main.c: In function 'reset_cause_get':
+../Core/main.c:36:17: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+   36 |                 sprintf(debug_buffer, "IWDG Reset (Independent Watchdog timeout)\r\n");
+      |                 ^~~~~~~
+../Core/main.c:13:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   12 | #include "application_logic.h"
+  +++ |+#include <stdio.h>
+   13 | 
+../Core/main.c:36:17: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+   36 |                 sprintf(debug_buffer, "IWDG Reset (Independent Watchdog timeout)\r\n");
+      |                 ^~~~~~~
+../Core/main.c:36:17: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/main.c:40:17: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+   40 |                 sprintf(debug_buffer, "WWDG Reset (Window Watchdog)\r\n");
+      |                 ^~~~~~~
+../Core/main.c:40:17: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/main.c:44:17: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+   44 |                 sprintf(debug_buffer, "Software Reset\r\n");
+      |                 ^~~~~~~
+../Core/main.c:44:17: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/main.c:48:17: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+   48 |                 sprintf(debug_buffer, "NRST Pin Reset\r\n");
+      |                 ^~~~~~~
+../Core/main.c:48:17: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/main.c:52:17: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+   52 |                 sprintf(debug_buffer, "Brownout Reset\r\n");
+      |                 ^~~~~~~
+../Core/main.c:52:17: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/main.c:56:17: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+   56 |                 sprintf(debug_buffer, "Unknown or No Specific Reset Flag\r\n");
+      |                 ^~~~~~~
+../Core/main.c:56:17: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/main.c: In function 'main':
+../Core/main.c:83:9: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+   83 |         sprintf(debug_buffer, "device_config.new_program: %02X, device_config.sample_interval: %d, "
+      |         ^~~~~~~
+../Core/main.c:83:9: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../LoRaWAN/App/lora_app.c:123:57: warning: initialization of 'void (*)(void)' from incompatible pointer type 'void (*)(void *)' [-Wincompatible-pointer-types]
+  123 |                 .OnSysTimeUpdate =                      OnSysTimeUpdate, // TODO: AMP 29-08-2025
+      |                                                         ^~~~~~~~~~~~~~~
+../LoRaWAN/App/lora_app.c:123:57: note: (near initialization for 'LmHandlerCallbacks.OnSysTimeUpdate')
+../LoRaWAN/App/lora_app.c: In function 'print_keys_and_id_onto_console':
+../LoRaWAN/App/lora_app.c:156:27: warning: implicit declaration of function 'SecureElementGetDevEui' [-Wimplicit-function-declaration]
+  156 |         uint8_t *devEui = SecureElementGetDevEui();
+      |                           ^~~~~~~~~~~~~~~~~~~~~~
+../LoRaWAN/App/lora_app.c:156:27: warning: initialization of 'uint8_t *' {aka 'unsigned char *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+../LoRaWAN/App/lora_app.c:157:9: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  157 |         sprintf(debug_buffer, "DeviceEUI -> %02X:%02X:%02X:%02X:%02X:%02X:%02X:%02X\r\n",
+      |         ^~~~~~~
+../LoRaWAN/App/lora_app.c:31:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   30 | #include "protocol.h"
+  +++ |+#include <stdio.h>
+   31 | 
+../LoRaWAN/App/lora_app.c:157:9: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+  157 |         sprintf(debug_buffer, "DeviceEUI -> %02X:%02X:%02X:%02X:%02X:%02X:%02X:%02X\r\n",
+      |         ^~~~~~~
+../LoRaWAN/App/lora_app.c:157:9: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../LoRaWAN/App/lora_app.c:161:28: warning: implicit declaration of function 'SecureElementGetJoinEui' [-Wimplicit-function-declaration]
+  161 |         uint8_t *joinEui = SecureElementGetJoinEui();
+      |                            ^~~~~~~~~~~~~~~~~~~~~~~
+../LoRaWAN/App/lora_app.c:161:28: warning: initialization of 'uint8_t *' {aka 'unsigned char *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+../Core/application_logic.c: In function 'process_downlink_data':
+../Core/application_logic.c:89:25: warning: implicit declaration of function 'device_config_data'; did you mean 'erase_config_data'? [-Wimplicit-function-declaration]
+   89 |                         device_config_data(&device_config);
+      |                         ^~~~~~~~~~~~~~~~~~
+      |                         erase_config_data
+../Core/application_logic.c:94:25: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+   94 |                         sprintf(debug_buffer, "Modified Sampling Interval Downlink Received: %d sec\r\n", device_config.sample_interval);
+      |                         ^~~~~~~
+../Core/application_logic.c:19:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   18 | #include "../LoRaWAN/config_application.h"
+  +++ |+#include <stdio.h>
+   19 | 
+../Core/application_logic.c:94:25: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+   94 |                         sprintf(debug_buffer, "Modified Sampling Interval Downlink Received: %d sec\r\n", device_config.sample_interval);
+      |                         ^~~~~~~
+../Core/application_logic.c:94:25: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/application_logic.c:103:17: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+  103 |                 sprintf(debug_buffer, "%s\r\n", "Fetch Device Config Downlink Received");
+      |                 ^~~~~~~
+../Core/application_logic.c:103:17: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/application_logic.c:111:17: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+  111 |                 sprintf(debug_buffer, "%s\r\n", "Battery Calibration Downlink Received");
+      |                 ^~~~~~~
+../Core/application_logic.c:111:17: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/application_logic.c:134:17: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+  134 |                 sprintf(debug_buffer, "Erase Samples Downlink Received. All pending samples cleared.\r\n");
+      |                 ^~~~~~~
+../Core/application_logic.c:134:17: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/application_logic.c: In function 'check_if_user_switch_pressed':
+../Core/application_logic.c:165:27: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+  165 |                           sprintf(debug_buffer, "Restoring the device to factory defaults\r\n");
+      |                           ^~~~~~~
+../Core/application_logic.c:165:27: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../LoRaWAN/App/lora_app.c:166:9: warning: implicit declaration of function 'SecureElementGetKeyByID' [-Wimplicit-function-declaration]
+  166 |         SecureElementGetKeyByID(NWK_KEY, &keyItem);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~
+../LoRaWAN/App/lora_app.c: In function 'OnJoinRequest':
+../LoRaWAN/App/lora_app.c:306:33: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+  306 |                                 sprintf(debug_buffer, "ABP ======================\r\n");
+      |                                 ^~~~~~~
+../LoRaWAN/App/lora_app.c:306:33: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../LoRaWAN/App/lora_app.c:312:33: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+  312 |                                 sprintf(debug_buffer, "OTAA ======================\r\n");
+      |                                 ^~~~~~~
+../LoRaWAN/App/lora_app.c:312:33: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../LoRaWAN/App/lora_app.c:325:25: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+  325 |                         sprintf(debug_buffer, "JOIN FAILED: %d\r\n", joinParams->Status);
+      |                         ^~~~~~~
+../LoRaWAN/App/lora_app.c:325:25: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../LoRaWAN/App/lora_app.c: In function 'OnJoinBackoffTimerEvent':
+../LoRaWAN/App/lora_app.c:371:9: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+  371 |         sprintf(debug_buffer, "Backoff period ended, attempting to join\r\n");
+      |         ^~~~~~~
+../LoRaWAN/App/lora_app.c:371:9: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../LoRaWAN/App/lora_app.c: In function 'OnRxData':
+../LoRaWAN/App/lora_app.c:405:33: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+  405 |                                 sprintf(debug_buffer, "%02X", appData->Buffer[i]);
+      |                                 ^~~~~~~
+../LoRaWAN/App/lora_app.c:405:33: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../LoRaWAN/App/lora_app.c:408:25: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+  408 |                         sprintf(debug_buffer, "\r\n");
+      |                         ^~~~~~~
+../LoRaWAN/App/lora_app.c:408:25: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../LoRaWAN/App/lora_app.c: In function 'OnTxData':
+../LoRaWAN/App/lora_app.c:518:49: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+  518 |                                                 sprintf(debug_buffer, "New Device Config ACK TX Success\r\n");
+      |                                                 ^~~~~~~
+../LoRaWAN/App/lora_app.c:518:49: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../LoRaWAN/App/lora_app.c:530:49: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+  530 |                                                 sprintf(debug_buffer, "Device Config TX Success\r\n");
+      |                                                 ^~~~~~~
+../LoRaWAN/App/lora_app.c:530:49: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../LoRaWAN/App/lora_app.c:541:49: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+  541 |                                                 sprintf(debug_buffer, "Battery Calibration TX Success\r\n");
+      |                                                 ^~~~~~~
+../LoRaWAN/App/lora_app.c:541:49: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../LoRaWAN/App/lora_app.c:549:49: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+  549 |                                                 sprintf(debug_buffer, "Erase Samples ACK TX Success\r\n");
+      |                                                 ^~~~~~~
+../LoRaWAN/App/lora_app.c:549:49: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/application_logic.c:179:27: warning: implicit declaration of function 'UTIL_SEQ_PauseTask' [-Wimplicit-function-declaration]
+  179 |                           UTIL_SEQ_PauseTask(1 << CFG_SEQ_Task_LmHandlerProcess);
+      |                           ^~~~~~~~~~~~~~~~~~
+../Core/application_logic.c: In function 'run_application_logic':
+../LoRaWAN/App/lora_app.c:562:49: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+  562 |                                                 sprintf(debug_buffer, "ACK Received, pending_packets: %d\r\n", (device_config.write_counter - device_config.read_counter));
+      |                                                 ^~~~~~~
+../Core/application_logic.c:206:17: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+  206 |                 sprintf(debug_buffer, "Sampling paused: link down & flash full (pending=%lu)\r\n",
+      |                 ^~~~~~~
+../LoRaWAN/App/lora_app.c:562:49: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/application_logic.c:206:17: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../LoRaWAN/App/lora_app.c:571:41: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+  571 |                                         sprintf(debug_buffer, "No ACK Received. Starting link check recovery.\r\n");
+      |                                         ^~~~~~~
+../LoRaWAN/App/lora_app.c:571:41: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../LoRaWAN/App/lora_app.c: In function 'SendTxData':
+../LoRaWAN/App/lora_app.c:661:33: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+  661 |                                 sprintf(debug_buffer, "Periodic Message TX: %02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X\r\n",
+      |                                 ^~~~~~~
+../LoRaWAN/App/lora_app.c:661:33: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../LoRaWAN/App/lora_app.c:672:17: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+  672 |                 sprintf(debug_buffer, "Message Send Fail\r\n");
+      |                 ^~~~~~~
+../LoRaWAN/App/lora_app.c:672:17: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../LoRaWAN/App/lora_app.c: In function 'OnTxTimerEvent':
+../LoRaWAN/App/lora_app.c:703:25: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+  703 |                         sprintf(debug_buffer, "TxTimer uplink BUSY\r\n");
+      |                         ^~~~~~~
+../LoRaWAN/App/lora_app.c:703:25: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../LoRaWAN/App/lora_app.c: In function 'OnLinkCheckTimerEvent':
+../LoRaWAN/App/lora_app.c:722:9: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+  722 |         sprintf(debug_buffer, "Link check skipped: Not joined\r\n");
+      |         ^~~~~~~
+../LoRaWAN/App/lora_app.c:722:9: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../LoRaWAN/App/lora_app.c:738:13: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+  738 |             sprintf(debug_buffer, "Link check uplink failed\r\n");
+      |             ^~~~~~~
+../LoRaWAN/App/lora_app.c:738:13: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../LoRaWAN/App/lora_app.c:757:17: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+  757 |                 sprintf(debug_buffer, "Max retries reached (%d), pending=%lu. Rebooting.\r\n",
+      |                 ^~~~~~~
+../LoRaWAN/App/lora_app.c:757:17: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../LoRaWAN/App/lora_app.c:767:17: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+  767 |                 sprintf(debug_buffer, "Max retries reached but flash has space (pending=%lu/%d). Waiting...\r\n",
+      |                 ^~~~~~~
+../LoRaWAN/App/lora_app.c:767:17: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../LoRaWAN/App/lora_app.c: In function 'OnMlmeConfirm':
+../LoRaWAN/App/lora_app.c:784:9: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+  784 |         sprintf(debug_buffer, "LinkCheckAns OK: Margin=%d, GwCnt=%d\r\n",
+      |         ^~~~~~~
+../LoRaWAN/App/lora_app.c:784:9: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../LoRaWAN/App/lora_app.c:803:9: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+  803 |         sprintf(debug_buffer, "Link check failed, retrying in %d s\r\n", (LINK_CHECK_RETRY_INTERVAL_MS / 1000));
+      |         ^~~~~~~
+../LoRaWAN/App/lora_app.c:803:9: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../LoRaWAN/App/lora_app.c: In function 'OnClockSyncTimerEvent':
+../LoRaWAN/App/lora_app.c:845:9: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+  845 |         sprintf(debug_buffer, "Time sync skipped: Not joined\r\n");
+      |         ^~~~~~~
+../LoRaWAN/App/lora_app.c:845:9: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../LoRaWAN/App/lora_app.c:853:46: warning: implicit declaration of function 'LmhpClockSyncAppTimeReq' [-Wimplicit-function-declaration]
+  853 |                 LmHandlerErrorStatus_t res = LmhpClockSyncAppTimeReq();
+      |                                              ^~~~~~~~~~~~~~~~~~~~~~~
+../LoRaWAN/App/lora_app.c:857:25: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+  857 |                         sprintf(debug_buffer, "time synchronization request fail\r\n");
+      |                         ^~~~~~~
+../LoRaWAN/App/lora_app.c:857:25: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../LoRaWAN/App/lora_app.c:872:25: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+  872 |                         sprintf(debug_buffer, "Max retries reached (%d), pending=%lu. Rebooting.\r\n",
+      |                         ^~~~~~~
+../LoRaWAN/App/lora_app.c:872:25: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../LoRaWAN/App/lora_app.c:883:25: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+  883 |                         sprintf(debug_buffer, "Max retries reached but flash has space (pending=%lu/%d). Waiting...\r\n",
+      |                         ^~~~~~~
+../LoRaWAN/App/lora_app.c:883:25: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../LoRaWAN/App/lora_app.c: In function 'OnSysTimeUpdate':
+../LoRaWAN/App/lora_app.c:903:17: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+  903 |                 sprintf(debug_buffer, "epoch_time: %lu\r\n", sysTime.Seconds);
+      |                 ^~~~~~~
+../LoRaWAN/App/lora_app.c:903:17: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../LoRaWAN/App/lora_app.c:939:25: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+  939 |                         sprintf(debug_buffer, "Max retries reached (%d), pending=%lu. Rebooting.\r\n",
+      |                         ^~~~~~~
+../LoRaWAN/App/lora_app.c:939:25: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../LoRaWAN/App/lora_app.c:950:25: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+  950 |                         sprintf(debug_buffer, "Max retries reached but flash has space (pending=%lu/%d). Waiting...\r\n",
+      |                         ^~~~~~~
+../LoRaWAN/App/lora_app.c:950:25: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+arm-none-eabi-gcc -o "STM32WL-standalone.elf" @"objects.list"   -mcpu=cortex-m4 -T"../STM32WL55JCIX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32WL-standalone.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.17.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.1.0.202410251130/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: STM32WL-standalone.elf has a LOAD segment with RWX permissions
+Finished building target: STM32WL-standalone.elf
+ 
+arm-none-eabi-size  STM32WL-standalone.elf 
+arm-none-eabi-objdump -h -S STM32WL-standalone.elf  > "STM32WL-standalone.list"
+   text	   data	    bss	    dec	    hex	filename
+ 101804	    796	   9280	 111880	  1b508	STM32WL-standalone.elf
+arm-none-eabi-objcopy  -O ihex STM32WL-standalone.elf  "STM32WL-standalone.hex"
+Finished building: default.size.stdout
+arm-none-eabi-objcopy  -O binary STM32WL-standalone.elf  "STM32WL-standalone.bin"
+ 
+Finished building: STM32WL-standalone.hex
+ 
+Finished building: STM32WL-standalone.bin
+ 
+Finished building: STM32WL-standalone.list
+ 
+
+15:12:41 Build Finished. 0 errors, 56 warnings. (took 7s.349ms)
+

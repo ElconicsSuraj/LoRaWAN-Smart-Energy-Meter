@@ -1,0 +1,77 @@
+/*
+ * eeprom.h
+ *
+ *  Created on: Aug 21, 2025
+ *      Author: Amogh MP
+ */
+
+#ifndef INC_EEPROM_H_
+#define INC_EEPROM_H_
+
+
+
+#define DATA_EEPROM_BASE					0x0802D000 //TODO: Check this
+#define DATA_EEPROM_END						0x0803D000 //TODO: Check this
+
+
+#define FLASH_USER_START_ADDR   			DATA_EEPROM_BASE //(FLASH_BASE + FLASH_PAGE_SIZE * 96)       /* Start @ of user Flash area */
+#define FLASH_USER_END_ADDR     			DATA_EEPROM_END  //FLASH_USER_START_ADDR + FLASH_PAGE_SIZE * 32   /* End @ of user Flash area */
+
+
+
+#define SAMPLES_START_ADDR					0x08030000 // 10 pages: 0x08030000 to 0x08035000
+#define PAGE_SIZE 							2048U
+#define NUM_SAMPLE_PAGES 					10U
+#define SAMPLES_PER_PAGE 					(PAGE_SIZE / sizeof(sample_data_t)) // 64
+#define MAX_SAMPLES 						(NUM_SAMPLE_PAGES * SAMPLES_PER_PAGE) // 640
+
+
+
+#define START_ADDRESS_OF_DEVNONCE_COUNTER	0x0803E000
+
+#define DATA_32                 ((uint32_t) 2)
+
+
+typedef struct config
+{
+	uint32_t battery_counter;
+	uint32_t write_counter;
+	uint32_t read_counter;
+	uint16_t new_program;
+	uint16_t sample_interval; // in sec
+	uint16_t upload_interval; // in sec
+	uint8_t is_reset_battery_counter;
+
+	uint8_t dummy[13];
+
+}device_config_t;
+
+extern device_config_t device_config;
+
+
+
+typedef struct sample_data_s
+{
+	uint32_t epoch_time;
+	uint32_t sample_number;
+
+	int16_t temperature;
+	uint8_t humidity;
+	uint8_t reserved[21];
+}sample_data_t;
+
+extern sample_data_t write_sensor_data, read_sensor_data;
+
+
+int write_config_data(device_config_t *configuration);
+void read_config_data(device_config_t *configuration);
+int erase_config_data(void);
+
+
+void init_sample_storage(void);
+uint8_t store_sample(const sample_data_t *sample);
+uint8_t read_next_sample(sample_data_t *sample);
+
+
+
+#endif /* INC_EEPROM_H_ */

@@ -1,0 +1,80 @@
+#define ACTIVATION_MODE     		OTAA
+#define CLASS						CLASS_A
+#define SPREADING_FACTOR    		12
+#define ADAPTIVE_DR         		false
+#define CONFIRMED           		true
+#define APP_PORT                	2
+
+#define SEND_BY_PUSH_BUTTON 		false
+#define FRAME_DELAY         		15000
+#define PAYLOAD_1234				false
+#define PAYLOAD_TEMPERATURE    		false
+#define PAYLOAD_HUMIDITY   			false
+#define CAYENNE_LPP_         		false
+#define LOW_POWER           		false
+
+
+#define devEUI_						{0x09,0x10,0x20,0x25,0x00,0x00,0x00,0x02}  //quarry 2 0910202500000002
+
+
+// Configuration for ABP Activation Mode
+#define devAddr_ 					( uint32_t )0x00000000
+#define nwkSKey_ 					00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00
+#define appSKey_ 					00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00
+
+
+// Configuration for OTAA Activation Mode
+#define appKey_						95,A8,2A,98,C8,76,0A,30,1F,61,7F,F0,80,7D,D4,B9  // 95A82A98C8760A301F617FF0807DD4B9
+#define appEUI_				    	{0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//#define ACTIVATION_MODE     		ABP
+//#define CLASS						CLASS_C
+//#define SPREADING_FACTOR    		12
+//#define ADAPTIVE_DR         		false
+//#define CONFIRMED           		false
+//#define APP_PORT                	2
+//
+//#define SEND_BY_PUSH_BUTTON 		false
+//#define FRAME_DELAY         		12000
+//#define PAYLOAD_1234				true
+//#define PAYLOAD_TEMPERATURE    		false
+//#define PAYLOAD_HUMIDITY   			false
+//#define CAYENNE_LPP_         		false
+//#define LOW_POWER           		false
+//
+//
+//#define devEUI_						{0x70,0x91,0x77,0x99,0x31, 0x82, 0x53, 0x01}
+//
+//#define devAddr_ ( uint32_t )0x26011BEE
+//#define nwkSKey_ 12,7F,A1,59,BB,09,34,88,CD,EF,10,AA,5C,90,3E,77
+//#define appSKey_ 9A,BC,DE,F0,11,22,33,44,55,66,77,88,99,AA,BB,CC
+//
+//
+//
+//// Configuration for OTAA Activation Mode
+//#define appKey_						 0C,24,6F,23,BF,B6,DA,D9,19,85,09,F1,DA,19,44,B4
+//
+//#define appEUI_						{0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01}
+
+
+

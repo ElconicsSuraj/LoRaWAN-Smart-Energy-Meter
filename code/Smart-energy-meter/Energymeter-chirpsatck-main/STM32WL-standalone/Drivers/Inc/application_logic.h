@@ -1,0 +1,97 @@
+/*
+ * application_logic.h
+ *
+ *  Created on: Aug 21, 2025
+ *      Author: Amogh MP
+ */
+
+#ifndef INC_APPLICATION_LOGIC_H_
+#define INC_APPLICATION_LOGIC_H_
+
+
+#include <stdint.h>
+#include "eeprom.h"
+#include "gpio.h"
+#include "temp_humidity_sensor.h"
+#include "rtc.h"
+
+
+#define LORAWAN_MAX_RETRY_JOIN_ATTEMPTS   				14 // approx 3 hours considering the exponential backoff
+
+
+#define DEFAULT_UPLOAD_INTERVAL_IN_SECONDS				10
+
+
+#define DEFAULT_MINIMUM_SAMPLING_INTERVAL_IN_SEC		30
+#define DEFAULT_MAXIMUM_SAMPLING_INTERVAL_IN_SEC		65535
+
+
+#define LINK_CHECK_RETRY_INTERVAL_MS				(2 * 60 * 1000)  // 2 minutes
+#define LINK_CHECK_MAX_RETRY_ATTEMPTS				15  // ~30 min at 2-min intervals
+
+#define FLASH_FULL_THRESHOLD						(MAX_SAMPLES - SAMPLES_PER_PAGE)  // 576 samples (1 page headroom)
+
+#define VIBRATION_COOLDOWN_MS					(30 * 1000)  // 30 seconds between vibration alerts
+#define VIBRATION_WINDOW_MS						200          // 200 ms pulse counting window
+#define VIBRATION_PULSE_THRESHOLD				1            // Immediate trigger on falling edge event
+
+#define JANUARY_1_2025_EPOCH							1735689600
+#define JANUARY_1_2050_EPOCH							2524608001
+
+
+
+
+
+extern volatile uint8_t sw_pressed;
+
+extern uint8_t can_send_temperature_alerts;
+extern uint8_t can_send_humidity_alerts;
+
+
+extern char debug_buffer[256];
+
+
+extern uint8_t downlink_data_buffer[256];
+extern uint8_t downlink_processing_buffer[256];
+
+extern uint32_t number_of_cycles_to_send_data;
+extern uint32_t number_of_cycles_to_sample_sensor;
+extern uint32_t data_sending_counter;
+extern uint32_t sensor_sampling_counter;
+extern uint32_t device_connection_retry_counter;
+
+
+
+
+typedef enum
+{
+	unknown = 0,
+
+	joining,
+	join_successful,
+	join_fail,
+
+	time_sync_in_progress,
+	time_sync_successfull,
+	time_sync_fail,
+
+	link_check_in_progress,
+	link_check_successfull,
+	link_check_fail,
+
+	data_sampling,
+	payload_uplinks
+
+}device_status_e;
+
+extern device_status_e device_status;
+
+
+void send_data_over_uart(char* str);
+uint8_t get_battery_percentage(void);
+void process_downlink_data(uint8_t* buffer, uint8_t payload_size);
+void check_if_user_switch_pressed(void);
+void run_application_logic(void);
+
+
+#endif /* INC_APPLICATION_LOGIC_H_ */

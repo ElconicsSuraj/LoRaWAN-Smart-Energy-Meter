@@ -1,0 +1,84 @@
+#define ACTIVATION_MODE     		OTAA
+#define CLASS						CLASS_A
+#define SPREADING_FACTOR    		12
+#define ADAPTIVE_DR         		true
+#define CONFIRMED           		true
+#define APP_PORT                	2
+
+#define SEND_BY_PUSH_BUTTON 		false
+#define FRAME_DELAY         		15000
+#define PAYLOAD_1234				false
+#define PAYLOAD_TEMPERATURE    		false
+#define PAYLOAD_HUMIDITY   			false
+#define CAYENNE_LPP_         		false
+#define LOW_POWER           		false
+
+
+
+#define RANGE_TESTING_MODE      	false    // Set to true for range/penetration testing
+
+
+#define devEUI_						{0x18,0x03,0x20,0x26,0x00,0x00,0x00,0x03}
+
+
+// Configuration for ABP Activation Mode
+#define devAddr_ 					( uint32_t )0x00000000
+#define nwkSKey_ 					00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00
+#define appSKey_ 					00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00
+
+
+// Configuration for OTAA Activation Mode
+#define appKey_						F1,31,3E,9C,AE,59,2B,73,39,B1,FA,2F,BE,A1,60,95
+#define appEUI_				    	{0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//#define ACTIVATION_MODE     		ABP
+//#define CLASS						CLASS_C
+//#define SPREADING_FACTOR    		12
+//#define ADAPTIVE_DR         		false
+//#define CONFIRMED           		false
+//#define APP_PORT                	2
+//
+//#define SEND_BY_PUSH_BUTTON 		false
+//#define FRAME_DELAY         		12000
+//#define PAYLOAD_1234				true
+//#define PAYLOAD_TEMPERATURE    		false
+//#define PAYLOAD_HUMIDITY   			false
+//#define CAYENNE_LPP_         		false
+//#define LOW_POWER           		false
+//
+//
+//#define devEUI_						{0x70,0x91,0x77,0x99,0x31, 0x82, 0x53, 0x01}
+//
+//#define devAddr_ ( uint32_t )0x26011BEE
+//#define nwkSKey_ 12,7F,A1,59,BB,09,34,88,CD,EF,10,AA,5C,90,3E,77
+//#define appSKey_ 9A,BC,DE,F0,11,22,33,44,55,66,77,88,99,AA,BB,CC
+//
+//
+//
+//// Configuration for OTAA Activation Mode
+//#define appKey_						 0C,24,6F,23,BF,B6,DA,D9,19,85,09,F1,DA,19,44,B4
+//
+//#define appEUI_						{0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01}
+
+
+
